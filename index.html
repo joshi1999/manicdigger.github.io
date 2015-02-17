@@ -16,21 +16,25 @@ layout: default
 
   <h3>Releases</h3>
   
+  <ul>
   {% for post in site.categories.releases limit:2 %}
     <article class="post">    
       
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date }} - {{ post.title }}</a></li>
       
     </article>
   {% endfor %}
+  </ul>
   
   <h3>News</h3>
   
   {% for post in site.categories.news limit:2 %}
+  <ul>
     <article class="post">    
       
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date }} - {{ post.title }}</a></li>
       
     </article>
   {% endfor %}
+  </ul>
 </div>
