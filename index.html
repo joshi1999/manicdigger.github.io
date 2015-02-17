@@ -18,11 +18,7 @@ layout: default
   
   <ul>
   {% for post in site.categories.releases limit:2 %}
-    <article class="post">    
-      
-      <li>{{ post.date | date: "%Y-%m-%d" }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-      
-    </article>
+    <li>{{ post.date | date: "%Y-%m-%d" }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
   </ul>
   
@@ -30,11 +26,7 @@ layout: default
   
   {% for post in site.categories.news limit:2 %}
   <ul>
-    <article class="post">    
-      
-      <li>{{ post.date | date: "%Y-%m-%d" }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-      
-    </article>
+    <li>{{ post.date | date: "%Y-%m-%d" }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
   </ul>
 </div>
