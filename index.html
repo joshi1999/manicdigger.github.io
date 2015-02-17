@@ -4,11 +4,19 @@ layout: default
 
 <div class="posts">
 
-  {% include about.md %}
+<p>Manic Digger is a 3d block-building game similar to Minecraft.</p>
+
+<b>Download</b>
+
+Latest version: 2015-02-17. [List of changes] (https://github.com/manicdigger/manicdigger/releases).
+
+<a href="https://github.com/manicdigger/manicdigger/releases/download/2015-02-17/ManicDigger2015-02-17Setup.exe"><img src="{{ site.baseurl }}/images/Windows.png"></img></a>
+<a href="https://github.com/manicdigger/manicdigger/releases/download/2015-02-17/ManicDigger2015-02-17Binary.zip><img src="{{ site.baseurl }}/images/Linux.png"</img></a>
+<a href="https://github.com/manicdigger/manicdigger"><img src="{{ site.baseurl }}/images/GitHub_Logo-300x123.png"></img></a>
 
   <h3>Releases</h3>
   
-  {% for post in site.categories.releases offset:1 limit:2 %}
+  {% for post in site.categories.releases limit:2 %}
     <article class="post">    
       
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
@@ -23,7 +31,7 @@ layout: default
   
   <h3>News</h3>
   
-  {% for post in site.categories.news offset:1 limit:2 %}
+  {% for post in site.categories.news limit:2 %}
     <article class="post">    
       
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
