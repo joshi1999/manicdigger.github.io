@@ -17,19 +17,4 @@ layout: default
 </p>
 <p><a href="http://manicdigger.github.io/manicdigger-builds/Index.html">Web browser client</a></p>
 
-  <h3><a href="{{ site.baseurl }}/releases">Releases</a></h3>
-  
-  <ul>
-  {% for post in site.categories.releases limit:2 %}
-    <li>{{ post.date | date: "%Y-%m-%d" }} - <a href="{{ site.baseurl }}/releases">{{ post.title }}</a></li>
-  {% endfor %}
-  </ul>
-  
-  <h3><a href="{{ site.baseurl }}/news">News</a></h3>
-  
-  <ul>
-  {% for post in site.categories.news limit:2 %}
-    <li>{{ post.date | date: "%Y-%m-%d" }} - <a href="{{ site.baseurl }}/news">{{ post.title }}</a></li>
-  {% endfor %}
-  </ul>
 </div>
