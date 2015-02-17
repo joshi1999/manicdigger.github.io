@@ -14,19 +14,19 @@ layout: default
 <a href="https://github.com/manicdigger/manicdigger/releases/download/2015-02-17/ManicDigger2015-02-17Binary.zip"><img src="{{ site.baseurl }}/images/Linux.png"</img></a>
 <a href="https://github.com/manicdigger/manicdigger"><img src="{{ site.baseurl }}/images/GitHub_Logo-300x123.png"></img></a>
 
-  <h3>Releases</h3>
+  <h3><a href="{{ site.baseurl }}/releases">Releases</a></h3>
   
   <ul>
   {% for post in site.categories.releases limit:2 %}
-    <li>{{ post.date | date: "%Y-%m-%d" }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    <li>{{ post.date | date: "%Y-%m-%d" }} - <a href="{{ site.baseurl }}/releases">{{ post.title }}</a></li>
   {% endfor %}
   </ul>
   
-  <h3>News</h3>
+  <h3><a href="{{ site.baseurl }}/news">News</a></h3>
   
   <ul>
   {% for post in site.categories.news limit:2 %}
-    <li>{{ post.date | date: "%Y-%m-%d" }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    <li>{{ post.date | date: "%Y-%m-%d" }} - <a href="{{ site.baseurl }}/news">{{ post.title }}</a></li>
   {% endfor %}
   </ul>
 </div>
