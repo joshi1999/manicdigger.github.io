@@ -1,15 +1,16 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /
 ---
 
-Some information about you!
+Manic Digger is a 3d block-building game similar to Minecraft.
 
-### More Information
+**Download**
 
-A place to include any other types of information that you'd like to include about yourself. 
+Latest version: 2015-02-17. [List of changes] (https://github.com/manicdigger/manicdigger/releases).
 
-### Contact me
+[![_config.yml]({{ site.baseurl }}/images/Windows.png)] (https://github.com/manicdigger/manicdigger/releases/download/2015-02-17/ManicDigger2015-02-17Setup.exe)
+[![_config.yml]({{ site.baseurl }}/images/Linux.png)] (https://github.com/manicdigger/manicdigger/releases/download/2015-02-17/ManicDigger2015-02-17Binary.zip)
+[![_config.yml]({{ site.baseurl }}/images/GitHub_Logo-300x123.png)] (https://github.com/manicdigger/manicdigger)
 
-[email@domain.com](mailto:email@domain.com)
