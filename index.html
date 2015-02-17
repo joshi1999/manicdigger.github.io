@@ -24,8 +24,8 @@ layout: default
   
   <h3>News</h3>
   
-  {% for post in site.categories.news limit:2 %}
   <ul>
+  {% for post in site.categories.news limit:2 %}
     <li>{{ post.date | date: "%Y-%m-%d" }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
   </ul>
