@@ -7,14 +7,15 @@ This mostly is a bugfix release but also introduces some features long requested
 This certainly is one of the features asked for the most by the players.  
 While it might seem simple it required quite some changes in how time is handled by the game. I won't bore you with the technical details.
 
-#### So it's here. Now how do I use it?
+### So it's here. Now how do I use it?
 Changing the time of day is done using a *server command*.
 It requires the privilege ***time***.
 The easiest way to try this is entering the command on the server console.
 
-##### Setting the time
+#### Setting the time
 You can directly set the game time by entering the following command where you replace `[time]` with an actual value.  
 *Format is described below*
+
 ```
 /time set [time]
 ```
@@ -22,6 +23,7 @@ You can directly set the game time by entering the following command where you r
 Another possibility is adding (you can also add negative amounts) time to the current time.
 This can be achieved by entering the following (replace `[time]` with an actual value).  
 *Format is described below*
+
 ```
 /time add [time]
 ```
@@ -29,28 +31,30 @@ This can be achieved by entering the following (replace `[time]` with an actual 
 As a nice bonus you can also modify the speed of time.
 Simply enter the following (replace `[speed]` with an actual value).  
 *Speed can be any integer.*
+
 ```
 /time speed [speed]
 ```
 
-##### Time format
+#### Time format
 Time is given in the following format:
 ```
 (-)(d.)hh:mm:ss
 ```
-|Value|Meaning|
-|----:|:------|
-| -   | (*optional*) minus sign for subtraction of time |
-| d   | (*optional*) number of days (0 to 10675199) |
-| hh  | hours (0 to 23) |
-| mm  | minutes (0 to 59) |
-| ss  | (*optional*) seconds (0 to 59) |
+
+```
+d   : days    (0 to 10675199) [optional]
+hh  : hours   (0 to 23)
+mm  : minutes (0 to 59)
+ss  : seconds (0 to 59) [optional]
+```
 
 Further explanation can be found [here](https://github.com/manicdigger/manicdigger/issues/107#issuecomment-72533357) and [here](https://msdn.microsoft.com/en-us/library/se73z7b9%28v=vs.90%29.aspx).
 
-##### Querying current time
+#### Querying current time
 And here is an example of the simplest usage. Asking what time it is.  
 *Please note that the server will also return the current time when entering an invalid command or you do not have the necessary privilege!*
+
 ```
 /time
 ```
